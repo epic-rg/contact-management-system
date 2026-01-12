@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Kodchasan:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.18s ease-in-out;
+}
+
+:root {
+  --bg-dark: #04364A;
+  --bg-card: #0f1b2d;
+  --text-white: #ffffff;
+  --text-color: #64CCC5;
+  --text-muted: #9aa4b2;
+  --accent: #176B87;
+}
+
+body {
+  font-family: "Kodchasan", sans-serif;
+  background: var(--bg-dark);
+  color: var(--text-white);
+}
+
+h1,
+h4 {
+  font-weight: 600;
+}
+
+button {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+input,
+textarea {
+  font-family: inherit;
+}
+
+textarea{
+    resize: none;
+}

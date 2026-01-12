@@ -1,0 +1,155 @@
+button {
+  background: var(--accent);
+  color: #000;
+  padding: 0.75rem 1.25rem;
+  border-radius: 999px;
+}
+
+input,
+textarea {
+  background: transparent;
+  padding: 0.5rem;
+}
+
+textarea {
+  border-radius: 10px;
+}
+
+.detail label {
+  margin-bottom: 0.25rem;
+  display: block;
+}
+
+.left h1 {
+  font-size: 3rem;
+}
+
+.light-green {
+  color: var(--text-color);
+}
+
+form {
+  background-color: white;
+  border-radius: 50px;
+}
+
+form h4 {
+  color: var(--accent);
+}
+
+label {
+  color: var(--text-muted);
+}
+
+input,
+textarea {
+  color: var(--accent);
+}
+
+input {
+  border: none;
+  border-bottom: 2px solid var(--text-muted);
+}
+
+.interests input[type="radio"] {
+  opacity: 0;
+}
+
+.detail:focus-within label {
+  color: var(--accent);
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+  outline: none;
+  border-bottom: 2px solid var(--accent);
+}
+
+.interests label,
+.interests span {
+  cursor: pointer;
+  border-radius: 999px;
+  transition: all 0.2s ease;
+  color: var(--bg-card);
+  font-size: 0.8rem;
+}
+
+.interests input[type="radio"] + span,
+.interests input[type="radio"] + label {
+  font-size: 0.8rem;
+}
+
+.interests input[type="radio"]:checked + span,
+.interests input[type="radio"]:checked + label {
+  background-color: var(--accent);
+  color: white;
+  border-color: var(--accent);
+}
+
+.interests span {
+  border-radius: 999px;
+  border: 1px solid var(--text-muted);
+  transition: all 0.2s ease;
+}
+
+.interests label:hover {
+  border-color: var(--accent);
+}
+
+.interests input[type="radio"]:focus-visible + span {
+  outline: 2px solid var(--accent);
+}
+
+.submit {
+  color: var(--text-white);
+}
+
+.submit:hover {
+  transform: scale(1.05);
+}
+
+/* Styles for error/success states */
+.input-error {
+  border-color: #ff4d4f;
+}
+
+.input-success {
+  border-color: #4ee1c1;
+}
+
+.form-error {
+  color: #ff4d4f;
+  font-size: 0.875rem;
+}
+
+.form-success {
+  color: #4ee1c1;
+  font-size: 0.875rem;
+}
+
+button.loading {
+  opacity: 0.6;
+  pointer-events: none;
+}
+
+.interests.error span {
+  border-color: #ff4d4f;
+}
+
+@media (max-width: 768px) {
+  .left h1 {
+    font-size: 2.2rem;
+  }
+
+  form {
+    border-radius: 20px;
+  }
+
+  .interests span {
+    font-size: 0.5rem;
+  }
+  .submit:hover {
+    transform: scale(1);
+  }
+}

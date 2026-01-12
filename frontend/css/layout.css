@@ -1,0 +1,104 @@
+main {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  width: 50%;
+  padding: 6rem;
+}
+
+.left h1 {
+  width: 80%;
+  margin-bottom: 1.5em;
+}
+
+.details {
+  margin: 4rem 0;
+}
+
+.details p {
+  display: flex;
+  align-items: top;
+
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.details p span {
+  padding-right: 1em;
+}
+
+.socials a {
+  padding: 0 1rem;
+}
+
+.socials svg {
+  height: 30px;
+  width: 30px;
+}
+
+.right {
+  width: 50%;
+  padding: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+form {
+  width: 80%;
+  height: 100%;
+  padding: 2em;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2em;
+}
+
+input[type="text"], input[type="email"], textarea{
+    width: 100%;
+}
+
+textarea{
+    padding: 1rem;
+}
+
+.interests {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+
+.interest-option{
+    position: relative;
+}
+
+.interests input[type="radio"] {
+  position: absolute;
+}
+
+.interests label {
+  text-align: center;
+}
+
+.interests span {
+  display: block;
+  padding: .75rem 0;
+}
+
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  form {
+    width: 100%;
+  }
+
+  .left,
+  .right {
+    width: 100%;
+  }
+}
