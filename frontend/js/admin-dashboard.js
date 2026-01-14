@@ -4,7 +4,7 @@ if (!token) {
   window.location.href = "./admin-login.html";
 }
 
-fetch("http://localhost:5000/api/admin/contacts", {
+fetch("https://contact-management-system-2-fupt.onrender.com/api/admin/contacts", {
   headers: {
     Authorization: `Bearer ${token}`,
   },
