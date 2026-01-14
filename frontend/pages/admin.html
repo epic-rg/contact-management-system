@@ -1,0 +1,15 @@
+<h1>Contact Submissions</h1>
+<ul id="contacts"></ul>
+
+<script type="module">
+  fetch("http://localhost:5000/api/admin/contacts")
+    .then(res => res.json())
+    .then(data => {
+      const list = document.getElementById("contacts");
+      data.data.forEach(c => {
+        const li = document.createElement("li");
+        li.innerText = `${c.name} | ${c.email} | ${c.message}`;
+        list.appendChild(li);
+      });
+    });
+</script>
