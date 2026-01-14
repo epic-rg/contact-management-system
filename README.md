@@ -54,10 +54,17 @@ contact-management-system/
 
 ## 🌐 Live Demo
 
-- **Frontend:** <your-frontend-url>
-- **Admin Dashboard:** <your-frontend-url>/admin-login.html
+- **Frontend:** <https://contact-management-system-rago.netlify.app/index.html>
+- **Admin Dashboard:**  <https://contact-management-system-rago.netlify.app/pages/admin-login>
 
 > Admin credentials are required to access the dashboard.
+
+## 🔐 Admin Demo Access
+
+Use the following credentials to access the admin dashboard:
+
+- **Username:** demoadmin
+- **Password:** demopassword
 
 ---
 
