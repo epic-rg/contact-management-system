@@ -1,9 +1,9 @@
-main{
-    gap: 4em;
+main {
+  gap: 4em;
 }
 
-h1{
-    margin-top: 4em;
+h1 {
+  margin-top: 4em;
 }
 
 ul {
@@ -15,25 +15,30 @@ ul {
   gap: 1px;
 }
 
-.ul{
-    background-color: white;
-    width: 80%;
-    border-radius: 30px;
-    padding: 2em 4em;
-    
+.ul {
+  background-color: white;
+  width: 80%;
+  border-radius: 30px;
+  padding: 2em 4em;
 }
 
 li {
   width: 80%;
   display: grid;
   gap: 1px;
-  grid-template-columns: 1fr 1fr 2fr;
+  align-items: stretch;
+  grid-template-columns: 2fr 2fr 5fr;
 }
 
-li span{
-    border: 2px solid black;
-    padding: 10px 20px;
-    color: var(--bg-card);
+li span {
+  border: 2px solid black;
+  padding: 10px 20px;
+  color: var(--bg-card);
+  width: 100%;
+  box-sizing: border-box;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
 }
 
 #logout {
@@ -41,31 +46,30 @@ li span{
   font-weight: 800;
 }
 
-
 @media (max-width: 768px) {
+  ul {
+    gap: 1em;
+  }
 
-    ul{
-        gap: 1em;
-    }
-    
-    li {
-        width: 100%;
-        grid-template-columns: 1fr 1fr;
-        grid-template-areas: "name mail"
-        "message message";
-    }
-    
-    li span{
-        font-size: .8rem;
-    }
-    
-    li span:first-child{
-        grid-area: name;
-    }
-    li span:nth-child(2){
-        grid-area: mail;
-    }
-    li span:nth-child(3){
-        grid-area: message;
-    }
+  li {
+    width: 100%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "name mail"
+      "message message";
+  }
+
+  li span {
+    font-size: 0.8rem;
+  }
+
+  li span:first-child {
+    grid-area: name;
+  }
+  li span:nth-child(2) {
+    grid-area: mail;
+  }
+  li span:nth-child(3) {
+    grid-area: message;
+  }
 }
