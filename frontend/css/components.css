@@ -3,6 +3,15 @@ button {
   color: #000;
   padding: 0.75rem 1.25rem;
   border-radius: 999px;
+  color: var(--text-white);
+}
+
+a{
+  color: var(--text-muted);
+}
+
+button:hover{
+  transform: scale(1.05);
 }
 
 input,
@@ -61,9 +70,16 @@ input {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
+input[type="password"]:focus,
 textarea:focus {
   outline: none;
   border-bottom: 2px solid var(--accent);
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"]{
+  color: var(--bg-card);
 }
 
 .interests label,
@@ -99,14 +115,6 @@ textarea:focus {
 
 .interests input[type="radio"]:focus-visible + span {
   outline: 2px solid var(--accent);
-}
-
-.submit {
-  color: var(--text-white);
-}
-
-.submit:hover {
-  transform: scale(1.05);
 }
 
 /* Styles for error/success states */
@@ -149,7 +157,7 @@ button.loading {
   .interests span {
     font-size: 0.5rem;
   }
-  .submit:hover {
+  button:hover {
     transform: scale(1);
   }
 }

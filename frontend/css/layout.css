@@ -1,3 +1,9 @@
+header a{
+  position: absolute;
+  top: 15px;
+  right: 34px;
+}
+
 main {
   display: flex;
   min-height: 100vh;
@@ -56,6 +62,10 @@ form {
   gap: 2em;
 }
 
+#admin-login-form{
+  width: max(25%, 360px);
+}
+
 input[type="text"], input[type="email"], textarea{
     width: 100%;
 }
@@ -88,7 +98,7 @@ textarea{
   padding: .75rem 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1168px) {
   main {
     flex-direction: column;
   }
