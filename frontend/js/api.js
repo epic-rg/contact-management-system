@@ -1,4 +1,4 @@
-const API_BASE_URL = "https://contact-management-system-2-fupt.onrender.com";
+const API_BASE_URL = "https://contact-management-system-2-fupt.onrender.com/api";
 
 export const submitContactForm = async (formData) => {
   const response = await fetch(`${API_BASE_URL}/contact`, {
